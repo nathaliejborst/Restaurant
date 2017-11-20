@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nathalie.restaurant.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="Please choose a category"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:paddingBottom="5dp"
+        android:paddingTop="9dp"
+        android:textSize="20dp"
+        android:background="@color/colorPrimaryDark"/>
+
+     <ListView
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:id="@+id/categoryListView">
+
+     </ListView>
+
+    <Button
+        android:id="@+id/toOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom"
+        android:text="View order"
+        android:onClick="toOrder"/>
+</LinearLayout>
